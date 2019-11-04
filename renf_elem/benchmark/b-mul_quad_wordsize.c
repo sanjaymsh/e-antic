@@ -4,9 +4,6 @@
 #include <e-antic/renf.h>
 #include <e-antic/renf_elem.h>
 
-/* todo: */
-/*  set precision and number of iterations as arguments */
-
 int main(int argc, char* const argv[])
 {
     int prec = 50;

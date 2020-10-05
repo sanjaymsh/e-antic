@@ -11,7 +11,7 @@ install:
   - sudo apt update
   - sudo apt install -y libc6-dbg
   - if [ "$TRAVIS_ARCH" = "amd64" ]; then wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh; fi
-  - if [ "$TRAVIS_ARCH" = "ppc64le" ]; then wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh; fi
+  - if [ "$TRAVIS_ARCH" = "ppc64le" ]; then wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh -O miniconda.sh; fi
   - bash miniconda.sh -b -p $HOME/miniconda
   - source "$HOME/miniconda/etc/profile.d/conda.sh"
   - hash -r
